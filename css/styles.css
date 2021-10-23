@@ -122,6 +122,13 @@ header {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)
+  ), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 /* buttons */
@@ -215,6 +222,28 @@ header {
   margin-right: 0px;
 }
 
+.feature-list .item::before {content: "";
+display: block;
+height: 120px;
+margin-bottom: 30px;
+background-color: 
+#F5F4FA;
+background-repeat: no-repeat;
+background-position: center;}
+
+.icon-vector::before
+{background-image: url(../images/vector.png);
+  }
+
+.icon-clock::before {background-image: url(../images/clock.png);
+}
+
+.icon-diagramm::before {background-image: url(../images/diagramm.png);
+}
+
+.icon-astronaut::before {background-image: url(../images/astronaut.png);
+}
+
 .feature-list .title {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -234,7 +263,7 @@ header {
 }
 
 
-
+/* works */
 .work-list {
   display: flex;
 }
@@ -276,7 +305,7 @@ header {
 
 .team-list .text {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -286,7 +315,33 @@ header {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.social-list {display: flex;
+justify-content: center;}
 
+.social-item {width: 44px;
+height: 44px;
+margin-right: 10px;}
+
+.social-item:last-child{margin-right: 0px;}
+
+.social-link {width: 100%;
+height: 100%;
+display: block;
+display: flex;
+justify-content: center;
+align-items: center ;
+border-radius: 50%;}
+
+.social-link:hover, 
+.social-link:focus {
+  background-color: var(--accent-color);
+  }
+
+  .social-link:hover .social-icon,
+  .social-link:focus .social-icon {
+    fill:var(--primary-bg-color);}
+
+/* portfolio */
 .portfolio-list .title {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -404,3 +459,4 @@ img {
   border-right: 1px solid #EEEEEE;
   padding: 20px 24px;
 }
+
